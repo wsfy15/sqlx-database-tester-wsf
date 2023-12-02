@@ -1,0 +1,20 @@
+[package]
+name = "sqlx-database-tester-wsf"
+version = "0.1.0"
+authors = ["SF Wu"]
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/"
+repository = "https://github.com/wsfy15/"
+homepage = "https://github.com/wsfy15/"
+description = """
+
+"""
+readme = "README.md"
+categories = ["development-tools"]
+keywords = []
+
+[dependencies]
+sqlx = { version = "0.6.3", features = ["runtime-tokio-rustls", "postgres", "uuid"] }
+tokio = { version = "1.34.0", features = ["macros", "rt", "rt-multi-thread"] }
+uuid = { version = "1.6.1", features = ["v4"] }
