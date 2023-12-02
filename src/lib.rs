@@ -5,7 +5,7 @@ use tokio::runtime::Runtime;
 use uuid::Uuid;
 
 pub struct TestDB {
-    dbname: String,
+    pub dbname: String,
     host: String,
     port: u16,
     username: String,
