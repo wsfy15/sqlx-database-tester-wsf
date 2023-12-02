@@ -8,7 +8,7 @@ documentation = "https://docs.rs/"
 repository = "https://github.com/wsfy15/"
 homepage = "https://github.com/wsfy15/"
 description = """
-
+a simple tool to test sqlx with postgres, automatically create a database and drop it after test.
 """
 readme = "README.md"
 categories = ["development-tools"]
