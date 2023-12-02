@@ -8,11 +8,13 @@ create one database at start of testing and destory after test ending.
 
 ## How to use it
 
-```bash
-$ cargo generate --git https://github.com/wsfy15/rust-lib-template
-```
+```rust
+let tdb = TestDB::new("localhost", 5432, "postgres", "123456", "./migrations");
+let pool = tdb.get_pool().await;
+// do something with pool
 
-You can rename `_github` directory as `.github` to fire a github Action.
+// when tdb get dropped, the database will be dropped
+```
 
 Have fun with this crate!
 
