@@ -1,6 +1,6 @@
 [package]
 name = "sqlx-database-tester-wsf"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["SF Wu"]
 edition = "2021"
 license = "MIT"
